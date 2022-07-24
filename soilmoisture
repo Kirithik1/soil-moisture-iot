@@ -1,0 +1,59 @@
+Arduino Soil Moisture Sensor Project*** / #description of the sensor value
+
+#0-300 arid soil
+
+300 - 700 moist soil
+
+#700-950 when submerged in water
+
+int sensorPin = Ati: / Set the potentiometer's input pin.
+
+                int sensorValue = 0: / variable used to store the sensor's value
+
+                                  void setup(1
+
+                                      pinMode(sensorPin, INPUT);
+
+                                      Serial.begin(9600),
+
+                                      void loop(
+
+                                        Get a reading from the Moisture sensor.
+
+                                        sensor Value analogRead(sensorPink:
+
+                                            Display Moisture Sensor Value in Serial Monitor
+
+                                            Serial print("Moisture Sensor Value: ");
+
+                                            Serial.println(sensorValue);
+
+                                            Display the Moisture Percentage
+
+                                            float moisture Percentage:
+
+                                            int sensor analog:
+
+                                            int sensorpin sensor analog = analogRead(sensorin); Serial print("Moisture Percentage=7% Serial.print(moisture Percentage
+
+                                                moisturePercentage (100 - ((sensorValue / 1023.00) 100
+
+                                                    Serial.print("Moisture Percentage = ");
+
+                                                    Serial.print(moisturePercentage); Serial.print("%\n\n");
+
+                                                    //Display the plant need if(sensorValue << 300){
+                                                    Serial.println("I am thirsty, please give me water");
+
+else if (sensorValue > 300 && sensorValue < 700) {
+Serial.println("I feel so comfortable");
+
+  1
+
+  if (sensorValue > 700) {
+
+    Serial.println("Too much water, I might get hurt");
+
+    Serial.print("\n");
+
+    delay(500):
